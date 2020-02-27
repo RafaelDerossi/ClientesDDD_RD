@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ClientesDDD.Aplicacao.Interfaces
 {
-    interface IAppBasico<T> where T : class
+   public interface IAppBasico<T> where T : class
     {
         void Adicionar(T obj);
 

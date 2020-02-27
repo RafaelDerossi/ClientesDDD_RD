@@ -8,7 +8,7 @@ using System.Text;
 
 namespace ClientesDDD.Infra.Dados.Repositorio.Genericos
 {
-    class RepositorioBasico<T> : IRepositorioBasico<T>, IDisposable where T : class
+    public class RepositorioBasico<T> : IRepositorioBasico<T>, IDisposable where T : class
     {
 
 

@@ -7,7 +7,7 @@ using System.Text;
 
 namespace ClientesDDD.Aplicacao.Aplicacoes
 {
-    class AppCliente : IAppCliente
+   public class AppCliente : IAppCliente
     {
         IRepositorioCliente _repositorioClienteInterface;
 

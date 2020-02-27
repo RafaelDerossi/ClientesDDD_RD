@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ClientesDDD.Aplicacao.Interfaces
 {
-    interface IAppCliente : IAppBasico<Cliente>
+   public interface IAppCliente : IAppBasico<Cliente>
     {
 
     }

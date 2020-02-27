@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ClientesDDD.Infra.Dados.Config
 {
-    class ClientesDbContext : DbContext
+   public class ClientesDbContext : DbContext
     {
         public DbSet<Cliente> Clientes { get; set; }
 
@@ -32,10 +32,13 @@ namespace ClientesDDD.Infra.Dados.Config
         private string GetConnectionString()
         {
             //Alterar para configurações desejadas:
-            return @"Server=(localdb)\\MSSQLLocalDB;
+            return @"Data Source=(localdb)\MSSQLLocalDB;
+                     Connect Timeout=30;
+                     Integrated Security=True;
                      Database=ClientesDDD_RD;
                      Trusted_Connection=True;
-                     MultipleActiveResultSets=True;";
+                     MultipleActiveResultSets=True;
+                     ";        
         }
 
     }

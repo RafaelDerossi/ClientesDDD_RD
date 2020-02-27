@@ -20,8 +20,8 @@ namespace ClientesDDD.Dominio.Entidades
         [MaxLength(200, ErrorMessage = "Sobrenome deve ter no máximo 200 caracteres")]
         public string Sobrenome { get; set; }
 
-        [Display(Name = "Data de Nascimento")]
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
+        [Display(Name = "Data de Nascimento")]       
         public DateTime DataNascimento { get; set; }
 
     }
